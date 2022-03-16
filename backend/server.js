@@ -27,5 +27,5 @@ server.get('/api/articles/:id', (req, res) => {
     const article = articles.find((n) => n.id === req.params.id);
     res.send(article);
     console.log(req.params);
-})
+});
 server.listen(PORT, console.log(`Server is Working... and listening on PORT:${PORT}`));
